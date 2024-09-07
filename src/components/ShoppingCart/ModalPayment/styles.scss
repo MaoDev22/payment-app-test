@@ -1,0 +1,124 @@
+@import 'styles/variables';
+
+#generalContainerModal {
+    position: fixed;
+    z-index: 50;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    background-color: rgba(0,0,0,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+
+    & > form {
+        background: white;
+        width: 100%;
+        max-width: 500px;
+        border-radius: 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        position: relative;
+
+        & > h3 {
+            display: inline-block;
+            margin-bottom: 20px;
+            max-width: 70%;
+        }
+
+        & > span {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+
+            & > img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        & > div.formControl {
+            position: relative;
+
+            &:not(:last-of-type) {
+                margin-bottom: 15px;
+            }
+
+            & > label {
+                width: 100%;
+                display: inline-block;
+                font-weight: bold;
+                font-size: 13px;
+                margin-bottom: 5px;
+            }
+
+            & > input {
+                width: 100%;
+                display: inline-block;
+                padding: 15px 25px;
+                box-sizing: border-box;
+                border-radius: 0px 50px 50px 50px;
+                border: none;
+                outline: none;
+                background-color: rgba(0,0,0,.05);
+                font-size: 15px;
+                font-weight: bold;
+
+                &::placeholder {
+                    color: rgba(0,0,0,.3);
+                }
+            }
+
+            & > img {
+                position: absolute;
+                bottom: 13px;
+                right: 20px;
+                width: 30px;
+            }
+
+        }
+
+        & > button {
+            border: none;
+            outline: none;
+            background-color: $secondary-color;
+            padding: 12px 15px;
+            box-sizing: border-box;
+            color: $primary-color;
+            font-weight: bold;
+            font-size: 15px;
+            border-radius: 10px;
+            width: 100%;
+            margin-top: 15px;
+            cursor: pointer;
+
+            &:disabled {
+                background-color: rgba(0,0,0,.4);
+                color: white;
+            }
+        }
+    }
+}
+
+#resumePayment {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,.05);
+    margin-bottom: 15px;
+    border-radius: 15px;
+
+    & > div {
+        font-size: 12px;
+        &:not(:last-of-type) {
+            margin-bottom: 5px;
+        }
+
+        & > strong {
+            color: rgba(0,0,0,.6);
+        }
+    }
+}

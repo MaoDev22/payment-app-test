@@ -1,0 +1,30 @@
+@import 'styles/variables';
+
+footer {
+    background-color: $primary-color;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > div {
+        width: 100%;
+        height: auto;
+        max-width: $max-width;
+
+        & > a {
+            text-decoration: none;
+            & > h5 {
+                color: rgba(255,255,255,.5);
+                text-align: center;
+                font-size: 2em;
+                font-weight: 400;
+            }
+        }
+        
+    }
+}
